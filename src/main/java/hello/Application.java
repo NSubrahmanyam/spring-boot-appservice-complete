@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Application {
 
-	@GetMapping("/")
-	public String home() {
-		return "Hello Docker World";
-	}
+	@GetMapping("/greetings")
+    public String message() {
+        return "Welcome to Application ! app deployed in AWS EKS";
+    }
 
-	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
 
 }
