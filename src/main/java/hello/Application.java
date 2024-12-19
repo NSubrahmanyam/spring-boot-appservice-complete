@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Application {
 
-	@GetMapping("/greetings")
+    @GetMapping("/greetings")
     public String message() {
         return "Welcome to Application ! app deployed in AWS EKS";
     }
